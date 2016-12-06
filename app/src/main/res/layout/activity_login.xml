@@ -60,7 +60,8 @@
                 android:text="@string/action_sign_in"
                 android:layout_marginTop="53dp"
                 android:layout_below="@+id/textInputLayout3"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:onClick="loadHome" />
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"

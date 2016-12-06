@@ -35,7 +35,7 @@
                 android:layout_height="match_parent">
 
                 <GridLayout
-                    android:id="@+id/grid"
+                    android:id="@+id/Events"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:columnCount="2"
@@ -50,7 +50,8 @@
                         android:text="@string/sport"
                         android:layout_gravity="fill"
                         android:layout_columnWeight="1"
-                        android:layout_rowWeight="1" />
+                        android:layout_rowWeight="1"
+                        android:background="#BE2625"/>
 
                     <Button
                         android:id="@+id/nightlifeButton"
@@ -60,6 +61,7 @@
                         android:layout_gravity="fill"
                         android:layout_columnWeight="1"
                         android:layout_rowWeight="1"
+                        android:background="#DF5B5A"
                         />
 
                     <Button
@@ -70,6 +72,7 @@
                         android:layout_gravity="fill"
                         android:layout_columnWeight="1"
                         android:layout_rowWeight="1"
+                        android:background="#82B482"
                         />
 
                     <Button
@@ -80,6 +83,7 @@
                         android:layout_gravity="fill"
                         android:layout_columnWeight="1"
                         android:layout_rowWeight="1"
+                        android:background="#B9D5B9"
                         />
 
                     <Button
@@ -90,6 +94,7 @@
                         android:layout_gravity="fill"
                         android:layout_columnWeight="1"
                         android:layout_rowWeight="1"
+                        android:background="#34C2A1"
                         />
 
                     <Button
@@ -100,12 +105,13 @@
                         android:layout_gravity="fill"
                         android:layout_columnWeight="1"
                         android:layout_rowWeight="1"
+                        android:background="#B3F6E3"
                         />
 
                 </GridLayout>
 
                 <LinearLayout
-                    android:id="@+id/Map"
+                    android:id="@+id/Create"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
@@ -113,7 +119,7 @@
                 </LinearLayout>
 
                 <GridLayout
-                    android:id="@+id/Events"
+                    android:id="@+id/Map"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
