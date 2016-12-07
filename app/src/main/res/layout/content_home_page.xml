@@ -10,8 +10,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.mobserve.weew.weew.homePage"
-    tools:showIn="@layout/activity_home_page">
+    tools:context="com.mobserve.weew.weew.homePage">
 
     <TabHost
         android:layout_width="match_parent"
@@ -112,72 +111,48 @@
                 </GridLayout>
 
                 <ScrollView
+                    android:id="@+id/Create"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content">
-                <GridLayout
-                    android:id="@+id/Create"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:columnCount="1"
-                    android:rowCount="4">
-
-
-                    <Spinner
-                        android:id="@+id/eventTypeText"
+                    <GridLayout
+                        android:id="@+id/createGread"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Category of the event"
-                        android:minWidth="200dp"
-                        android:layout_columnWeight="1"
-                        android:layout_rowWeight="2"/>
+                        android:layout_height="match_parent"
+                        android:columnCount="1"
+                        android:rowCount="4">
 
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:inputType="textPersonName"
-                        android:text="Date of the event"
-                        android:ems="10"
-                        android:id="@+id/eventDateText"
-                        android:focusable="false"
-                        android:layout_columnWeight="1"
-                        android:layout_rowWeight="1"/>
 
-                    <Button
-                        android:text="Submit"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/submitButton"
-                        android:layout_marginTop="12dp"
-                        android:background="#BE2625"
-                        android:layout_columnWeight="1"
-                        android:layout_rowWeight="1"/>
-                    /RelativeLayout>
-                    <!--
-                    <Spinner
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/spinner" />
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPersonName"
+                            android:text="Date of the event"
+                            android:ems="10"
+                            android:id="@+id/eventDateText"
+                            android:focusable="false"
+                            android:layout_columnWeight="1"
+                            android:layout_rowWeight="1"/>
 
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:inputType="textPersonName"
-                        android:text="Event Date and time"
-                        android:ems="10"
-                        android:id="@+id/eventDateText" />
+                        <Spinner
+                            android:id="@+id/eventTypeText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Category of the event"
+                            android:minWidth="200dp"
+                            android:layout_columnWeight="1"
+                            android:layout_rowWeight="2"/>
 
-                    <CalendarView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/calendarView" />
-
-                    <TimePicker
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/timePicker" />
-                    !-->
-
-                </GridLayout>
+                        <Button
+                            android:text="Submit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/submitButton"
+                            android:layout_marginTop="12dp"
+                            android:background="#BE2625"
+                            android:layout_columnWeight="1"
+                            android:layout_rowWeight="1"/>
+                        /RelativeLayout>
+                    </GridLayout>
 
                 </ScrollView>
 
