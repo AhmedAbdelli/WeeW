@@ -23,6 +23,7 @@
     <string name="travel">Travel</string>
     <string name="title_activity_maps">Map</string>
     <string name="google_maps_key">AIzaSyCck4f7Vd2AyUUrKwAetU4bT36Krrgjx2g</string>
+    <string name="title_activity_edit_profile">EditProfile</string>
     <!-- Strings related to home Page -->
 
 </resources>
