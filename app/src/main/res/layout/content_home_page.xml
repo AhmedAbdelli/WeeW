@@ -114,11 +114,33 @@
                 <ScrollView
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content">
-                <LinearLayout
+                <GridLayout
                     android:id="@+id/Create"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:columnCount="1"
+                    android:rowCount="4">
+
+
+                    <Spinner
+                        android:id="@+id/eventTypeText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Category of the event"
+                        android:minWidth="200dp"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="2"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:text="Date of the event"
+                        android:ems="10"
+                        android:id="@+id/eventDateText"
+                        android:focusable="false"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"/>
 
                     <Button
                         android:text="Submit"
@@ -126,15 +148,10 @@
                         android:layout_height="wrap_content"
                         android:id="@+id/submitButton"
                         android:layout_marginTop="12dp"
-                        android:background="#BE2625"/>
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:inputType="textPersonName"
-                        android:text="Event Type"
-                        android:ems="10"
-                        android:id="@+id/eventTypeText"
-                        android:focusable="false" />
+                        android:background="#BE2625"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"/>
+                    /RelativeLayout>
                     <!--
                     <Spinner
                         android:layout_width="match_parent"
@@ -160,7 +177,7 @@
                         android:id="@+id/timePicker" />
                     !-->
 
-                </LinearLayout>
+                </GridLayout>
 
                 </ScrollView>
 
