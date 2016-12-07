@@ -111,13 +111,59 @@
 
                 </GridLayout>
 
+                <ScrollView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
                 <LinearLayout
                     android:id="@+id/Create"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
 
+                    <Button
+                        android:text="Submit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/submitButton"
+                        android:layout_marginTop="12dp"
+                        android:background="#BE2625"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:text="Event Type"
+                        android:ems="10"
+                        android:id="@+id/eventTypeText"
+                        android:focusable="false" />
+                    <!--
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinner" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:text="Event Date and time"
+                        android:ems="10"
+                        android:id="@+id/eventDateText" />
+
+                    <CalendarView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/calendarView" />
+
+                    <TimePicker
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/timePicker" />
+                    !-->
+
                 </LinearLayout>
+
+                </ScrollView>
+
 
                 <GridLayout
                     android:id="@+id/Map"
